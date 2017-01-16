@@ -9,7 +9,10 @@ Shadowsocks is a good option.
 ### brew
 
 brew use curl as download base tool, so you can add a `.curlrc` file in the home directory,
-and add `socks5 = "127.0.0.1:1080"` using shadowsocks as your proxy server.
+and add `socks5 = "127.0.0.1:1080"` using shadowsocks as your proxy server, I've read some manual
+that `curl` can use either `export http_proxy=http://your.proxy.server:port/` or `export https_proxy=https://your.proxy.server:port`
+as proxy, haven't tried yet, should also work fine, `curl` has an option `-x`, which is an alias for `--proxy`, config them in
+the curlrc file should work too.
 
 ### maven
 
