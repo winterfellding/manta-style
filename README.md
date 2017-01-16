@@ -40,3 +40,7 @@ git support http.proxy and https.proxy, you can use `git config --global http.pr
 [https]
     proxy = socks5://127.0.0.1:1080
 ```
+
+### npm 
+
+taobao has a npm mirror, use `npm config set registry http://registry.npm.taobao.org`, you can also use `cnpm` or alias a npm with registry option, please follow the instrction from [taobao registry](https://npm.taobao.org/).
